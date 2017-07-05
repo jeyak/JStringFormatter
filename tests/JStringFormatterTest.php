@@ -5,7 +5,8 @@ namespace Tests\JStringFormatter;
 use Libs\JStringFormatter;
 use PHPUnit\Framework\TestCase;
 
-class JStringFormatterTest extends TestCase {
+class JStringFormatterTest extends TestCase
+{
     /**
      * test concat
      */

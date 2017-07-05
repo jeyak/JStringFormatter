@@ -2,11 +2,13 @@
 
 namespace Libs;
 
-class JStringFormatter {
+class JStringFormatter
+{
     /*
     Concat
     */
-    public static function concat(String $str1, String $str2) {
+    public static function concat(String $str1, String $str2)
+    {
         return $str1.$str2;
     }
 
@@ -23,7 +25,7 @@ class JStringFormatter {
     */
     public static function prefix(String $str1, String $str2, $toCamelCase = false)
     {
-        if($toCamelCase) {
+        if ($toCamelCase) {
             return JStringFormatter::toCamelCase($str1, $str2);
         }
         return JStringFormatter::concat($str1, $str2);
