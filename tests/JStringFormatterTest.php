@@ -38,4 +38,17 @@ class JStringFormatterTest extends TestCase {
         $this->assertSame('HelloWorld', JStringFormatter::prefix($str1, $str2, true));
         $this->assertSame('WorldHello', JStringFormatter::prefix($str2, $str1, true));
     }
+
+    /**
+     * test Suffix
+     */
+    public function testSuffix()
+    {
+        $str1 = "hello";
+        $str2 = "world";
+        $this->assertSame('worldhello', JStringFormatter::suffix($str1, $str2));
+        $this->assertSame('worldhello', JStringFormatter::suffix($str1, $str2, false));
+        $this->assertSame('WorldHello', JStringFormatter::suffix($str1, $str2, true));
+        $this->assertSame('HelloWorld', JStringFormatter::suffix($str2, $str1, true));
+    }
 }

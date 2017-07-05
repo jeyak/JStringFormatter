@@ -28,4 +28,12 @@ class JStringFormatter {
         }
         return JStringFormatter::concat($str1, $str2);
     }
+
+    /*
+    suffix
+    */
+    public static function suffix(String $str1, String $str2, $toCamelCase = false)
+    {
+        return JStringFormatter::prefix($str2, $str1, $toCamelCase);
+    }
 }
