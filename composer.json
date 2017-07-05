@@ -5,6 +5,16 @@
         "phpunit/phpunit": "^6.2",
         "friendsofphp/php-cs-fixer": "^2.3"
     },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "jeyak",
