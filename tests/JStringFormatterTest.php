@@ -15,4 +15,14 @@ class JStringFormatterTest extends TestCase {
         $str2 = "World";
         $this->assertSame('HelloWorld', JStringFormatter::concat($str1, $str2));
     }
+
+    /**
+     * test ToCamelCase
+     */
+    public function testToCamelCase()
+    {
+        $str1 = "hello";
+        $str2 = "world";
+        $this->assertSame('HelloWorld', JStringFormatter::toCamelCase($str1, $str2));
+    }
 }
