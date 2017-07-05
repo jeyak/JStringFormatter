@@ -25,4 +25,17 @@ class JStringFormatterTest extends TestCase {
         $str2 = "world";
         $this->assertSame('HelloWorld', JStringFormatter::toCamelCase($str1, $str2));
     }
+
+    /**
+     * test Prefix
+     */
+    public function testPrefix()
+    {
+        $str1 = "hello";
+        $str2 = "world";
+        $this->assertSame('helloworld', JStringFormatter::prefix($str1, $str2));
+        $this->assertSame('helloworld', JStringFormatter::prefix($str1, $str2, false));
+        $this->assertSame('HelloWorld', JStringFormatter::prefix($str1, $str2, true));
+        $this->assertSame('WorldHello', JStringFormatter::prefix($str2, $str1, true));
+    }
 }

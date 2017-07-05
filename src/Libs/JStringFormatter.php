@@ -17,4 +17,15 @@ class JStringFormatter {
     {
         return ucfirst($str1).ucfirst($str2);
     }
+
+    /*
+    prefix
+    */
+    public static function prefix(String $str1, String $str2, $toCamelCase = false)
+    {
+        if($toCamelCase) {
+            return JStringFormatter::toCamelCase($str1, $str2);
+        }
+        return JStringFormatter::concat($str1, $str2);
+    }
 }
