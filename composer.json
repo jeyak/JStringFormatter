@@ -1,0 +1,14 @@
+{
+    "name": "rjeya/j-string-formatter",
+    "description": "JStringFormatter",
+    "require": {
+        "phpunit/phpunit": "^6.2",
+        "friendsofphp/php-cs-fixer": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "jeyak",
+            "email": "rjeyaksan@outlook.fr"
+        }
+    ]
+}
